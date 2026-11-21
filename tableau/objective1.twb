@@ -1,0 +1,2271 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelRelationshipPerfOptions />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Metro.Time+ (BUDT703_Project_0506_11)' inline='true' name='federated.0s8d85y11zdgcd179nbgx1rhl9r0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='doitsqlx.rhsmith.umd.edu,9703' name='sqlserver.16wbqqu1rivq68168dmvh0sk7078'>
+            <connection authentication='sspi' class='sqlserver' dbname='BUDT703_Project_0506_11' odbc-native-protocol='yes' one-time-sql='' server='doitsqlx.rhsmith.umd.edu,9703' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Line' table='[dbo].[Metro.Line]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Classification' table='[dbo].[Metro.Classification]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.LinePerformance' table='[dbo].[Metro.LinePerformance]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.RoutePerformance' table='[dbo].[Metro.RoutePerformance]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Time' table='[dbo].[Metro.Time]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Operational' table='[dbo].[Metro.Operational]' type='table' />
+          <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Route' table='[dbo].[Metro.Route]' type='table' />
+        </relation>
+        <cols>
+          <map key='[classificationClass]' value='[Metro.Classification].[classificationClass]' />
+          <map key='[classificationId (Metro.Classification)]' value='[Metro.Classification].[classificationId]' />
+          <map key='[classificationId]' value='[Metro.Line].[classificationId]' />
+          <map key='[classificationTier]' value='[Metro.Classification].[classificationTier]' />
+          <map key='[lineId (Metro.LinePerformance)]' value='[Metro.LinePerformance].[lineId]' />
+          <map key='[lineId (Metro.Operational)]' value='[Metro.Operational].[lineId]' />
+          <map key='[lineId (Metro.Route)]' value='[Metro.Route].[lineId]' />
+          <map key='[lineId]' value='[Metro.Line].[lineId]' />
+          <map key='[lineJurisdiction]' value='[Metro.Line].[lineJurisdiction]' />
+          <map key='[lineName]' value='[Metro.Line].[lineName]' />
+          <map key='[linePerformanceCostRecovery]' value='[Metro.LinePerformance].[linePerformanceCostRecovery]' />
+          <map key='[linePerformanceCrowding]' value='[Metro.LinePerformance].[linePerformanceCrowding]' />
+          <map key='[linePerformanceId]' value='[Metro.LinePerformance].[linePerformanceId]' />
+          <map key='[linePerformanceOTP]' value='[Metro.LinePerformance].[linePerformanceOTP]' />
+          <map key='[linePerformanceOpsCostperPAX]' value='[Metro.LinePerformance].[linePerformanceOpsCostperPAX]' />
+          <map key='[linePerformancePPRM]' value='[Metro.LinePerformance].[linePerformancePPRM]' />
+          <map key='[operationalAnnualCost]' value='[Metro.Operational].[operationalAnnualCost]' />
+          <map key='[operationalDeadheadMiles]' value='[Metro.Operational].[operationalDeadheadMiles]' />
+          <map key='[operationalId]' value='[Metro.Operational].[operationalId]' />
+          <map key='[operationalLineGrade]' value='[Metro.Operational].[operationalLineGrade]' />
+          <map key='[operationalPctBenches]' value='[Metro.Operational].[operationalPctBenches]' />
+          <map key='[operationalPctRTSigns]' value='[Metro.Operational].[operationalPctRTSigns]' />
+          <map key='[operationalPctShelters]' value='[Metro.Operational].[operationalPctShelters]' />
+          <map key='[operationalPeakVehicles]' value='[Metro.Operational].[operationalPeakVehicles]' />
+          <map key='[operationalPopLowInc]' value='[Metro.Operational].[operationalPopLowInc]' />
+          <map key='[operationalPopPOC]' value='[Metro.Operational].[operationalPopPOC]' />
+          <map key='[operationalPopulation]' value='[Metro.Operational].[operationalPopulation]' />
+          <map key='[operationalRevenueMiles]' value='[Metro.Operational].[operationalRevenueMiles]' />
+          <map key='[operationalStopsCount]' value='[Metro.Operational].[operationalStopsCount]' />
+          <map key='[routeId (Metro.RoutePerformance)]' value='[Metro.RoutePerformance].[routeId]' />
+          <map key='[routeId]' value='[Metro.Route].[routeId]' />
+          <map key='[routeName]' value='[Metro.Route].[routeName]' />
+          <map key='[routePerformanceAvgDailyRidership]' value='[Metro.RoutePerformance].[routePerformanceAvgDailyRidership]' />
+          <map key='[routePerformanceCircuity]' value='[Metro.RoutePerformance].[routePerformanceCircuity]' />
+          <map key='[routePerformanceCostRecovery]' value='[Metro.RoutePerformance].[routePerformanceCostRecovery]' />
+          <map key='[routePerformanceCrowding]' value='[Metro.RoutePerformance].[routePerformanceCrowding]' />
+          <map key='[routePerformanceId]' value='[Metro.RoutePerformance].[routePerformanceId]' />
+          <map key='[routePerformanceOTP]' value='[Metro.RoutePerformance].[routePerformanceOTP]' />
+          <map key='[routePerformanceOpsCostperPAX]' value='[Metro.RoutePerformance].[routePerformanceOpsCostperPAX]' />
+          <map key='[routePerformancePPRM]' value='[Metro.RoutePerformance].[routePerformancePPRM]' />
+          <map key='[routePerformanceStopsPerMile]' value='[Metro.RoutePerformance].[routePerformanceStopsPerMile]' />
+          <map key='[timeDayType]' value='[Metro.Time].[timeDayType]' />
+          <map key='[timeFiscalYear]' value='[Metro.Time].[timeFiscalYear]' />
+          <map key='[timeId (Metro.LinePerformance)]' value='[Metro.LinePerformance].[timeId]' />
+          <map key='[timeId (Metro.RoutePerformance)]' value='[Metro.RoutePerformance].[timeId]' />
+          <map key='[timeId (Metro.Time)]' value='[Metro.Time].[timeId]' />
+          <map key='[timeId]' value='[Metro.Operational].[timeId]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>lineId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineId]</local-name>
+            <parent-name>[Metro.Line]</parent-name>
+            <remote-alias>lineId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Line_447919F845AB4CA683C1CD2C069F2382]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lineName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineName]</local-name>
+            <parent-name>[Metro.Line]</parent-name>
+            <remote-alias>lineName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Line_447919F845AB4CA683C1CD2C069F2382]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lineJurisdiction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineJurisdiction]</local-name>
+            <parent-name>[Metro.Line]</parent-name>
+            <remote-alias>lineJurisdiction</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Line_447919F845AB4CA683C1CD2C069F2382]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificationId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificationId]</local-name>
+            <parent-name>[Metro.Line]</parent-name>
+            <remote-alias>classificationId</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Line_447919F845AB4CA683C1CD2C069F2382]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificationId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificationId (Metro.Classification)]</local-name>
+            <parent-name>[Metro.Classification]</parent-name>
+            <remote-alias>classificationId</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Classification_53342985B7A1419EB69712D4E65BE6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificationClass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificationClass]</local-name>
+            <parent-name>[Metro.Classification]</parent-name>
+            <remote-alias>classificationClass</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Classification_53342985B7A1419EB69712D4E65BE6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificationTier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificationTier]</local-name>
+            <parent-name>[Metro.Classification]</parent-name>
+            <remote-alias>classificationTier</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Classification_53342985B7A1419EB69712D4E65BE6C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeId (Metro.LinePerformance)]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>timeId</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lineId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineId (Metro.LinePerformance)]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>lineId</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformanceId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[linePerformanceId]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformanceId</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformancePPRM</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[linePerformancePPRM]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformancePPRM</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformanceOTP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[linePerformanceOTP]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformanceOTP</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformanceCrowding</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[linePerformanceCrowding]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformanceCrowding</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformanceOpsCostperPAX</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[linePerformanceOpsCostperPAX]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformanceOpsCostperPAX</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linePerformanceCostRecovery</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[linePerformanceCostRecovery]</local-name>
+            <parent-name>[Metro.LinePerformance]</parent-name>
+            <remote-alias>linePerformanceCostRecovery</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeId (Metro.RoutePerformance)]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>timeId</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[routeId (Metro.RoutePerformance)]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routeId</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[routePerformanceId]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceId</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformancePPRM</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformancePPRM]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformancePPRM</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceOTP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceOTP]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceOTP</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceCrowding</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceCrowding]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceCrowding</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceOpsCostperPAX</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceOpsCostperPAX]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceOpsCostperPAX</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceCostRecovery</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceCostRecovery]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceCostRecovery</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceStopsPerMile</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceStopsPerMile]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceStopsPerMile</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceCircuity</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[routePerformanceCircuity]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceCircuity</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routePerformanceAvgDailyRidership</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[routePerformanceAvgDailyRidership]</local-name>
+            <parent-name>[Metro.RoutePerformance]</parent-name>
+            <remote-alias>routePerformanceAvgDailyRidership</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeId (Metro.Time)]</local-name>
+            <parent-name>[Metro.Time]</parent-name>
+            <remote-alias>timeId</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeFiscalYear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeFiscalYear]</local-name>
+            <parent-name>[Metro.Time]</parent-name>
+            <remote-alias>timeFiscalYear</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeDayType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeDayType]</local-name>
+            <parent-name>[Metro.Time]</parent-name>
+            <remote-alias>timeDayType</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeId]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>timeId</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lineId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineId (Metro.Operational)]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>lineId</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[operationalId]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalId</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalAnnualCost</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[operationalAnnualCost]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalAnnualCost</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPeakVehicles</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalPeakVehicles]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPeakVehicles</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPopulation</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalPopulation]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPopulation</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPopPOC</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalPopPOC]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPopPOC</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPopLowInc</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalPopLowInc]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPopLowInc</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalStopsCount</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalStopsCount]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalStopsCount</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPctShelters</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[operationalPctShelters]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPctShelters</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPctBenches</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[operationalPctBenches]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPctBenches</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalPctRTSigns</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[operationalPctRTSigns]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalPctRTSigns</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalRevenueMiles</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalRevenueMiles]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalRevenueMiles</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalDeadheadMiles</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operationalDeadheadMiles]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalDeadheadMiles</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operationalLineGrade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[operationalLineGrade]</local-name>
+            <parent-name>[Metro.Operational]</parent-name>
+            <remote-alias>operationalLineGrade</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routeId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[routeId]</local-name>
+            <parent-name>[Metro.Route]</parent-name>
+            <remote-alias>routeId</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Route_397AB9A487E04A99B68B16E043C3E2F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routeName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[routeName]</local-name>
+            <parent-name>[Metro.Route]</parent-name>
+            <remote-alias>routeName</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Route_397AB9A487E04A99B68B16E043C3E2F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lineId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lineId (Metro.Route)]</local-name>
+            <parent-name>[Metro.Route]</parent-name>
+            <remote-alias>lineId</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <object-id>[Metro.Route_397AB9A487E04A99B68B16E043C3E2F7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Rank Value' datatype='boolean' name='[Calculation_311592813385928705]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='RANK_DENSE( AVG([Calculation_649644260345950215]), &apos;desc&apos; ) &lt;= 5'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Social Value %' datatype='real' name='[Calculation_522417566342279168]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([operationalPopLowInc]) / SUM([operationalAnnualCost])) * 100' />
+      </column>
+      <column caption='FY2023 Cost' datatype='real' name='[Calculation_522417566342836225]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [timeFiscalYear] = &apos;2023&apos; THEN [linePerformanceCostRecovery] END' />
+      </column>
+      <column caption='FY2024 Cost' datatype='real' name='[Calculation_522417566343045122]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [timeFiscalYear] = &apos;2024&apos; THEN [linePerformanceCostRecovery] END' />
+      </column>
+      <column caption='Change in Cost Recovery' datatype='real' name='[Calculation_522417566343155715]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_522417566343045122]) - SUM([Calculation_522417566342836225])' />
+      </column>
+      <column caption='Amenity Score' datatype='real' name='[Calculation_522417566343614468]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[operationalPctShelters] + [operationalPctBenches]' />
+      </column>
+      <column caption='Total Amenities' datatype='real' name='[Calculation_522417566344503301]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[operationalPctShelters] + [operationalPctBenches]' />
+      </column>
+      <column caption='Total Riders' datatype='integer' name='[Calculation_522417566344617990]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([routePerformanceAvgDailyRidership])' />
+      </column>
+      <column caption='Average Cost Recovery' datatype='real' name='[Calculation_649644260341223424]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([linePerformanceCostRecovery])' />
+      </column>
+      <column caption='Cost Recovery 2022' datatype='real' name='[Calculation_649644260341379073]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2022&quot; THEN [linePerformanceCostRecovery] END' />
+      </column>
+      <column caption='Cost Recovery 2023' datatype='real' name='[Calculation_649644260341710850]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2023&quot; THEN [linePerformanceCostRecovery] END' />
+      </column>
+      <column caption='Cost Recovery 2024' datatype='real' name='[Calculation_649644260341858307]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2024&quot; THEN [linePerformanceCostRecovery] END' />
+      </column>
+      <column caption='Change 2022-&gt;2023' datatype='real' name='[Calculation_649644260342009860]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_649644260341710850]) - AVG([Calculation_649644260341379073])' />
+      </column>
+      <column caption='Change 2023-&gt;2024' datatype='real' name='[Calculation_649644260342083589]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_649644260341858307]) - AVG([Calculation_649644260341710850])' />
+      </column>
+      <column caption='Year' datatype='string' name='[Calculation_649644260345774086]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF NOT ISNULL([Calculation_649644260341379073]) THEN &quot;2022&quot;&#13;&#10;ELSEIF NOT ISNULL([Calculation_649644260341710850]) THEN &quot;2023&quot;&#13;&#10;ELSE &quot;2024&quot; END' />
+      </column>
+      <column caption='Cost Recovery' datatype='real' name='[Calculation_649644260345950215]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_649644260345774086] = &quot;2022&quot; THEN [Calculation_649644260341379073]&#13;&#10;ELSEIF [Calculation_649644260345774086] = &quot;2023&quot; THEN [Calculation_649644260341710850]&#13;&#10;ELSE [Calculation_649644260341858307] END' />
+      </column>
+      <column caption='Average Population' datatype='real' name='[Calculation_649644260349607945]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([operationalPopulation])' />
+      </column>
+      <column caption='Average Amenities' datatype='real' name='[Calculation_649644260349693962]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([operationalPctShelters] + [operationalPctBenches])' />
+      </column>
+      <column caption='Amenities Per Capita' datatype='real' name='[Calculation_649644260349771787]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_649644260349693962] / [Calculation_649644260349607945]' />
+      </column>
+      <column caption='Metro.Classification' datatype='table' name='[__tableau_internal_object_id__].[Metro.Classification_53342985B7A1419EB69712D4E65BE6C1]' role='measure' type='quantitative' />
+      <column caption='Metro.LinePerformance' datatype='table' name='[__tableau_internal_object_id__].[Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF]' role='measure' type='quantitative' />
+      <column caption='Metro.Line' datatype='table' name='[__tableau_internal_object_id__].[Metro.Line_447919F845AB4CA683C1CD2C069F2382]' role='measure' type='quantitative' />
+      <column caption='Metro.Operational' datatype='table' name='[__tableau_internal_object_id__].[Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09]' role='measure' type='quantitative' />
+      <column caption='Metro.RoutePerformance' datatype='table' name='[__tableau_internal_object_id__].[Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69]' role='measure' type='quantitative' />
+      <column caption='Metro.Route' datatype='table' name='[__tableau_internal_object_id__].[Metro.Route_397AB9A487E04A99B68B16E043C3E2F7]' role='measure' type='quantitative' />
+      <column caption='Metro.Time' datatype='table' name='[__tableau_internal_object_id__].[Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE]' role='measure' type='quantitative' />
+      <column caption='Classification Class' datatype='string' name='[classificationClass]' role='dimension' type='nominal' />
+      <column caption='Classification Id' datatype='string' name='[classificationId]' role='dimension' type='nominal' />
+      <column caption='Classification Tier' datatype='string' name='[classificationTier]' role='dimension' type='nominal' />
+      <column caption='Line Id' datatype='string' name='[lineId]' role='dimension' type='nominal' />
+      <column caption='Line Jurisdiction' datatype='string' name='[lineJurisdiction]' role='dimension' type='nominal' />
+      <column caption='Line Name' datatype='string' name='[lineName]' role='dimension' type='nominal' />
+      <column caption='Line Performance Cost Recovery' datatype='real' name='[linePerformanceCostRecovery]' role='measure' type='quantitative' />
+      <column caption='Line Performance Crowding' datatype='real' name='[linePerformanceCrowding]' role='measure' type='quantitative' />
+      <column caption='Line Performance Id' datatype='string' name='[linePerformanceId]' role='dimension' type='nominal' />
+      <column caption='Line Performance OTP' datatype='real' name='[linePerformanceOTP]' role='measure' type='quantitative' />
+      <column caption='Line Performance Ops Costper PAX' datatype='real' name='[linePerformanceOpsCostperPAX]' role='measure' type='quantitative' />
+      <column caption='Line Performance PPRM' datatype='real' name='[linePerformancePPRM]' role='measure' type='quantitative' />
+      <column caption='Operational Annual Cost' datatype='real' name='[operationalAnnualCost]' role='measure' type='quantitative' />
+      <column caption='Operational Deadhead Miles' datatype='integer' name='[operationalDeadheadMiles]' role='measure' type='quantitative' />
+      <column caption='Operational Id' datatype='string' name='[operationalId]' role='dimension' type='nominal' />
+      <column caption='Operational Line Grade' datatype='string' name='[operationalLineGrade]' role='dimension' type='nominal' />
+      <column caption='Operational Pct Benches' datatype='real' name='[operationalPctBenches]' role='measure' type='quantitative' />
+      <column caption='Operational Pct RT Signs' datatype='real' name='[operationalPctRTSigns]' role='measure' type='quantitative' />
+      <column caption='Operational Pct Shelters' datatype='real' name='[operationalPctShelters]' role='measure' type='quantitative' />
+      <column caption='Operational Peak Vehicles' datatype='integer' name='[operationalPeakVehicles]' role='measure' type='quantitative' />
+      <column caption='Operational Pop Low Inc' datatype='integer' name='[operationalPopLowInc]' role='measure' type='quantitative' />
+      <column caption='Operational Pop POC' datatype='integer' name='[operationalPopPOC]' role='measure' type='quantitative' />
+      <column caption='Operational Population' datatype='integer' name='[operationalPopulation]' role='measure' type='quantitative' />
+      <column caption='Operational Revenue Miles' datatype='integer' name='[operationalRevenueMiles]' role='measure' type='quantitative' />
+      <column caption='Operational Stops Count' datatype='integer' name='[operationalStopsCount]' role='measure' type='quantitative' />
+      <column caption='Route Id' datatype='string' name='[routeId]' role='dimension' type='nominal' />
+      <column caption='Route Name' datatype='string' name='[routeName]' role='dimension' type='nominal' />
+      <column caption='Route Performance Avg Daily Ridership' datatype='integer' name='[routePerformanceAvgDailyRidership]' role='measure' type='quantitative' />
+      <column caption='Route Performance Circuity' datatype='real' name='[routePerformanceCircuity]' role='measure' type='quantitative' />
+      <column caption='Route Performance Cost Recovery' datatype='real' name='[routePerformanceCostRecovery]' role='measure' type='quantitative' />
+      <column caption='Route Performance Crowding' datatype='real' name='[routePerformanceCrowding]' role='measure' type='quantitative' />
+      <column caption='Route Performance Id' datatype='string' name='[routePerformanceId]' role='dimension' type='nominal' />
+      <column caption='Route Performance OTP' datatype='real' name='[routePerformanceOTP]' role='measure' type='quantitative' />
+      <column caption='Route Performance Ops Costper PAX' datatype='real' name='[routePerformanceOpsCostperPAX]' role='measure' type='quantitative' />
+      <column caption='Route Performance PPRM' datatype='real' name='[routePerformancePPRM]' role='measure' type='quantitative' />
+      <column caption='Route Performance Stops Per Mile' datatype='real' name='[routePerformanceStopsPerMile]' role='measure' type='quantitative' />
+      <column caption='Time Day Type' datatype='string' name='[timeDayType]' role='dimension' type='nominal' />
+      <column caption='Time Fiscal Year' datatype='string' name='[timeFiscalYear]' role='dimension' type='nominal' />
+      <column caption='Time Id' datatype='string' name='[timeId]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_649644260341379073]' derivation='Avg' name='[avg:Calculation_649644260341379073:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_649644260341710850]' derivation='Avg' name='[avg:Calculation_649644260341710850:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_649644260341858307]' derivation='Avg' name='[avg:Calculation_649644260341858307:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[classificationClass]' derivation='None' name='[none:classificationClass:nk]' pivot='key' type='nominal' />
+      <column-instance column='[lineName]' derivation='None' name='[none:lineName:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_649644260342009860]' derivation='User' name='[usr:Calculation_649644260342009860:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_649644260342083589]' derivation='User' name='[usr:Calculation_649644260342083589:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[avg:Calculation_649644260341379073:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[usr:Calculation_649644260342083589:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[usr:Calculation_649644260342009860:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[avg:Calculation_649644260341858307:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[avg:Calculation_649644260341710850:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:classificationClass:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Framework&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;Coverage&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Commuter&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:lineName:nk]' palette='blue_red_brown_10_0' type='palette'>
+            <map to='#3896c4'>
+              <bucket>&quot;Laurel-Old Columbia Pike Express&quot;</bucket>
+            </map>
+            <map to='#466f9d'>
+              <bucket>&quot;Annandale&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;14th Street&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Connecticut Avenue-Maryland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Anacostia - Washington Highlands&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Benning Heights-Alabama Avenue&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wisconsin Avenue&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Annandale-East Falls Church&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;River Road&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Anacostia-Eckington&quot;</bucket>
+            </map>
+            <map to='#91b3d7'>
+              <bucket>&quot;Benning Road&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Columbia Pike&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Columbia Pike-Farragut Square&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;16th Street&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Deanwood-Alabama Avenue&quot;</bucket>
+            </map>
+            <map to='#a0d4ee'>
+              <bucket>&quot;Orange Hunt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anacostia-Fort Drum&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Leesburg Pike&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Benning Road-H Street&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;College Park&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kings Park–North Springfield&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Annapolis Road&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;U Street-Garfield&quot;</bucket>
+            </map>
+            <map to='#ed444a'>
+              <bucket>&quot;Bock Road&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Anacostia-Livingston&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;New Hampshire Ave–Maryland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alexandria-Fairfax&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Georgia Avenue-7th Street&quot;</bucket>
+            </map>
+            <map to='#feb5a2'>
+              <bucket>&quot;Clinton&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ardwick Industrial Park Shuttle&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United Medical Center–Anacostia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alexandria-Pentagon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Greenbelt-Twinbrook&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Metro.Classification' id='Metro.Classification_53342985B7A1419EB69712D4E65BE6C1'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Classification' table='[dbo].[Metro.Classification]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.LinePerformance' id='Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.LinePerformance' table='[dbo].[Metro.LinePerformance]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.Line' id='Metro.Line_447919F845AB4CA683C1CD2C069F2382'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Line' table='[dbo].[Metro.Line]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.Operational' id='Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Operational' table='[dbo].[Metro.Operational]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.RoutePerformance' id='Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.RoutePerformance' table='[dbo].[Metro.RoutePerformance]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.Route' id='Metro.Route_397AB9A487E04A99B68B16E043C3E2F7'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Route' table='[dbo].[Metro.Route]' type='table' />
+            </properties>
+          </object>
+          <object caption='Metro.Time' id='Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE'>
+            <properties context=''>
+              <relation connection='sqlserver.16wbqqu1rivq68168dmvh0sk7078' name='Metro.Time' table='[dbo].[Metro.Time]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[classificationId]' />
+              <expression op='[classificationId (Metro.Classification)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='Metro.Line_447919F845AB4CA683C1CD2C069F2382' />
+            <second-end-point is-db-set-unique-key='true' object-id='Metro.Classification_53342985B7A1419EB69712D4E65BE6C1' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[lineId]' />
+              <expression op='[lineId (Metro.LinePerformance)]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='Metro.Line_447919F845AB4CA683C1CD2C069F2382' unique-key='true' />
+            <second-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[lineId]' />
+              <expression op='[lineId (Metro.Operational)]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='Metro.Line_447919F845AB4CA683C1CD2C069F2382' unique-key='true' />
+            <second-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='Metro.Operational_249C0578CFEA4BB0A654A087A26CEB09' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[timeId (Metro.LinePerformance)]' />
+              <expression op='[timeId (Metro.RoutePerformance)]' />
+            </expression>
+            <first-end-point object-id='Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF' />
+            <second-end-point object-id='Metro.RoutePerformance_32EF7FB9E4274D42BDC8A07E9C59EC69' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[lineId]' />
+              <expression op='[lineId (Metro.Route)]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='Metro.Line_447919F845AB4CA683C1CD2C069F2382' unique-key='true' />
+            <second-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='Metro.Route_397AB9A487E04A99B68B16E043C3E2F7' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[timeId (Metro.LinePerformance)]' />
+              <expression op='[timeId (Metro.Time)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='Metro.LinePerformance_5C26F732B1F54B12A5AFD83A41CE7ACF' />
+            <second-end-point is-db-set-unique-key='true' object-id='Metro.Time_ED4F9FE0243145FA94333DAE5DE049AE' unique-key='true' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cost Recovery '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>How did cost recovery change from FY2022 to FY2024 for Commuter lines?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Metro.Time+ (BUDT703_Project_0506_11)' name='federated.0s8d85y11zdgcd179nbgx1rhl9r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s8d85y11zdgcd179nbgx1rhl9r0'>
+            <column caption='Cost Recovery 2022' datatype='real' name='[Calculation_649644260341379073]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2022&quot; THEN [linePerformanceCostRecovery] END' />
+            </column>
+            <column caption='Cost Recovery 2023' datatype='real' name='[Calculation_649644260341710850]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2023&quot; THEN [linePerformanceCostRecovery] END' />
+            </column>
+            <column caption='Cost Recovery 2024' datatype='real' name='[Calculation_649644260341858307]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [timeFiscalYear] = &quot;2024&quot; THEN [linePerformanceCostRecovery] END' />
+            </column>
+            <column caption='Year' datatype='string' name='[Calculation_649644260345774086]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF NOT ISNULL([Calculation_649644260341379073]) THEN &quot;2022&quot;&#13;&#10;ELSEIF NOT ISNULL([Calculation_649644260341710850]) THEN &quot;2023&quot;&#13;&#10;ELSE &quot;2024&quot; END' />
+            </column>
+            <column caption='Cost Recovery' datatype='real' name='[Calculation_649644260345950215]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_649644260345774086] = &quot;2022&quot; THEN [Calculation_649644260341379073]&#13;&#10;ELSEIF [Calculation_649644260345774086] = &quot;2023&quot; THEN [Calculation_649644260341710850]&#13;&#10;ELSE [Calculation_649644260341858307] END' />
+            </column>
+            <column-instance column='[Calculation_649644260345950215]' derivation='Avg' name='[avg:Calculation_649644260345950215:qk]' pivot='key' type='quantitative' />
+            <column caption='Classification Class' datatype='string' name='[classificationClass]' role='dimension' type='nominal' />
+            <column caption='Line Name' datatype='string' name='[lineName]' role='dimension' type='nominal' />
+            <column caption='Line Performance Cost Recovery' datatype='real' name='[linePerformanceCostRecovery]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_649644260345774086]' derivation='None' name='[none:Calculation_649644260345774086:nk]' pivot='key' type='nominal' />
+            <column-instance column='[classificationClass]' derivation='None' name='[none:classificationClass:nk]' pivot='key' type='nominal' />
+            <column-instance column='[lineName]' derivation='None' name='[none:lineName:nk]' pivot='key' type='nominal' />
+            <column caption='Time Fiscal Year' datatype='string' name='[timeFiscalYear]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:Calculation_649644260345774086:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_649644260345950215])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Calculation_649644260345774086:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]'>
+            <groupfilter function='member' level='[none:classificationClass:nk]' member='&quot;Commuter&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:Calculation_649644260345774086:nk]</column>
+            <column>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[avg:Calculation_649644260345950215:qk]' scope='rows' value='Cost Recovery' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:Calculation_649644260345774086:nk]' value='261' />
+          </style-rule>
+          <style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' id='legend-color' value='7' />
+            <format attr='col-width' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' value='220' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7471270561218262' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[avg:Calculation_649644260345950215:qk]</rows>
+        <cols>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:Calculation_649644260345774086:nk]</cols>
+      </table>
+      <simple-id uuid='{B1508F03-A5AD-4C41-BC96-64722687BD4D}' />
+    </worksheet>
+    <worksheet name='Social Value'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>What is the social value for each line classification class and tier?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Metro.Time+ (BUDT703_Project_0506_11)' name='federated.0s8d85y11zdgcd179nbgx1rhl9r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s8d85y11zdgcd179nbgx1rhl9r0'>
+            <column caption='Social Value %' datatype='real' name='[Calculation_522417566342279168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([operationalPopLowInc]) / SUM([operationalAnnualCost])) * 100' />
+            </column>
+            <column caption='Classification Class' datatype='string' name='[classificationClass]' role='dimension' type='nominal' />
+            <column caption='Classification Tier' datatype='string' name='[classificationTier]' role='dimension' type='nominal' />
+            <column-instance column='[classificationClass]' derivation='None' name='[none:classificationClass:nk]' pivot='key' type='nominal' />
+            <column-instance column='[classificationTier]' derivation='None' name='[none:classificationTier:nk]' pivot='key' type='nominal' />
+            <column caption='Operational Annual Cost' datatype='real' name='[operationalAnnualCost]' role='measure' type='quantitative' />
+            <column caption='Operational Pop Low Inc' datatype='integer' name='[operationalPopLowInc]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_522417566342279168]' derivation='User' name='[usr:Calculation_522417566342279168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Commuter&quot;</bucket>
+              <bucket>&quot;Coverage&quot;</bucket>
+              <bucket>&quot;Framework&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' id='legend-color' value='8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' id='legend-color' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[usr:Calculation_522417566342279168:qk]</rows>
+        <cols>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationTier:nk]</cols>
+      </table>
+      <simple-id uuid='{33988333-366D-491D-BCE4-762E2612D9E6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Cost Efficiency Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='51200' x='48000' y='1000'>
+            <zone h='74375' id='7' name='Cost Recovery ' w='51200' x='48000' y='1000'>
+              <layout-cache minheight='290' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='23625' id='8' name='Cost Recovery ' pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' type-v2='color' w='51200' x='48000' y='75375'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='88625' id='5' name='Social Value' w='47200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='6' name='Social Value' pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' type-v2='color' w='47200' x='800' y='89625'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88625' id='5' is-fixed='true' name='Social Value' w='47200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='6' name='Social Value' pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' type-v2='color' w='47200' x='800' y='89625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74375' id='7' is-fixed='true' name='Cost Recovery ' w='51200' x='48000' y='1000'>
+                  <layout-cache minheight='290' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23625' id='8' name='Cost Recovery ' pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' type-v2='color' w='51200' x='48000' y='75375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B0D37415-0491-418B-A2B1-530C480B0FDD}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Social Value'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='278'>
+            <card pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationTier:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EAEF276F-96DF-4EC0-8631-90B0867CF954}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Cost Recovery '>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[:Measure Names]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[attr:lineName:nk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:Calculation_649644260345774086:nk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:linePerformanceCostRecovery:qk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[usr:Calculation_311592813384458240:nk]</field>
+            <field>[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[usr:Calculation_311592813385928705:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A23021DC-2CD3-430B-9765-30E9A040E644}' />
+    </window>
+    <window class='dashboard' name='Cost Efficiency Dashboard'>
+      <viewpoints>
+        <viewpoint name='Cost Recovery '>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:lineName:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Social Value'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0s8d85y11zdgcd179nbgx1rhl9r0].[none:classificationClass:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3B383ED8-3700-4D95-9A29-D15866F506A8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cost Efficiency Dashboard' width='192'>
+      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
+      K811AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Cost Recovery ' width='192'>
+      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
+      ugsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Social Value' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
