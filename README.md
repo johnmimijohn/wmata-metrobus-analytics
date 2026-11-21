@@ -125,9 +125,11 @@ Each chart below is the Tableau visualization that backs the finding above it.
 
 Full numbers and recommendations are in `docs/research_report.docx`.
 
-## Team
+## Team and contribution
 
-This was a four person group project for BUDT703 Database Management Systems at the University of Maryland, Robert H. Smith School of Business. Team members: Ody Adigwe, Kyoungmin Lee, Ioannis Mimigiannis, and Dunyasha S M Yattogoda.
+This was a four person group project for BUDT703 Database Management Systems at the University of Maryland, Robert H. Smith School of Business, and it took first place in a graduate analytics competition. Team members: Ody Adigwe, Kyoungmin Lee, Ioannis Mimigiannis, and Dunyasha S M Yattogoda.
+
+**My role (Ioannis Mimigiannis):** I contributed across every part of the project, from data extraction and relational schema design through to the Tableau visualizations.
 
 ## Note on data
 
