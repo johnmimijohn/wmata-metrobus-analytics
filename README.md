@@ -26,61 +26,7 @@ The most demanding part of this project was not the analysis, it was getting tru
 
 Eight tables: four describing the structure of the bus network and four holding time stamped facts and targets.
 
-```mermaid
-erDiagram
-    CLASSIFICATION ||--o{ LINE : classifies
-    LINE ||--o{ ROUTE : includes
-    CLASSIFICATION ||--o{ METRICTARGET : sets
-    TIME ||--o{ METRICTARGET : "measured in"
-    LINE ||--o{ OPERATIONAL : has
-    TIME ||--o{ OPERATIONAL : "measured in"
-    LINE ||--o{ LINEPERFORMANCE : has
-    TIME ||--o{ LINEPERFORMANCE : "measured in"
-    ROUTE ||--o{ ROUTEPERFORMANCE : has
-    TIME ||--o{ ROUTEPERFORMANCE : "measured in"
-
-    CLASSIFICATION {
-        char classificationId PK
-        varchar classificationClass
-        char classificationTier
-    }
-    TIME {
-        char timeId PK
-        char timeFiscalYear
-        varchar timeDayType
-    }
-    LINE {
-        char lineId PK
-        varchar lineName
-        char lineJurisdiction
-        char classificationId FK
-    }
-    ROUTE {
-        char routeId PK
-        varchar routeName
-        char lineId FK
-    }
-    METRICTARGET {
-        char metricTargetSetId PK
-        char classificationId FK
-        char timeId FK
-    }
-    OPERATIONAL {
-        char operationalId PK
-        char lineId FK
-        char timeId FK
-    }
-    LINEPERFORMANCE {
-        char linePerformanceId PK
-        char lineId FK
-        char timeId FK
-    }
-    ROUTEPERFORMANCE {
-        char routePerformanceId PK
-        char routeId FK
-        char timeId FK
-    }
-```
+![Entity relationship diagram for the MetroMetrics database](images/erd.png)
 
 Key metrics tracked include Passengers per Revenue Mile (PPRM), On Time Performance (OTP), Operating Cost per Passenger, Cost Recovery, Crowding, Circuity, and Deadhead miles.
 
