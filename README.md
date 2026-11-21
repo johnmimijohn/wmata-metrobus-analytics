@@ -98,6 +98,7 @@ Key metrics tracked include Passengers per Revenue Mile (PPRM), On Time Performa
 │   └── 06_objective4_trends.sql               Year over year trends
 ├── tableau/
 │   ├── objective1.twb  …  objective4.twb      One workbook per objective
+├── images/                                    Chart exports used in this README
 ├── docs/
 │   ├── design_document.docx                   Data model, business rules, data dictionary
 │   ├── research_report.docx                   Full write up with findings
@@ -112,21 +113,71 @@ Key metrics tracked include Passengers per Revenue Mile (PPRM), On Time Performa
 3. Run any objective file to reproduce its analysis.
 4. Open the Tableau workbooks in `tableau/` to explore the visualizations.
 
-## The four objectives and what we found
+## The four objectives, with findings and charts
+
+Each chart below is the Tableau visualization that backs the finding above it.
 
 ### Objective 1: Resource allocation and equity
-How much social value does each service type deliver per dollar, and how is cost recovery trending for Commuter lines? Commuter lines returned the highest social value to low income riders per dollar spent (up to 2.4 percent), while Framework lines sat near 0.25 percent, which points to where equity focused investment pays off most.
+
+**Social value per dollar, by classification and tier.** Commuter lines deliver the highest social value to low income riders per dollar spent, up to 2.4 percent, while Framework lines sit near 0.25 percent. Equity focused investment pays off most on Commuter service.
+
+![Social value by classification class and tier](images/obj1_social_value.png)
+
+**Cost recovery trend for Commuter lines, FY2022 to FY2024.** Benning Road and Orange Hunt rose sharply, while lines such as Clinton and Bock Road stayed flat and low, a gap worth investigating for transferable practices.
+
+![Commuter cost recovery, FY2022 to FY2024](images/obj1_cost_recovery_commuter.png)
 
 ### Objective 2: Compliance and reliability
-Do Framework lines meet their mandated targets? Only three Framework lines met the FY2024 weekday OTP target of 0.79, and Framework cost recovery missed its target every year from 2022 to 2024. Commuter service carried an unusually high deadhead burden, close to half of its mileage run out of service, which flags a structural efficiency problem.
+
+**On time performance versus target, Framework lines, FY2024 weekday.** Only three Framework lines met the 0.79 target. Most fell below it, and Georgia Avenue to 7th Street trailed at 0.68.
+
+![OTP versus target by Framework line](images/obj2_otp_framework.png)
+
+**Service fragility, measured as deadhead share by service type.** Commuter service ran close to half of its mileage out of service, far above Coverage at roughly 15 percent, which flags a structural efficiency problem.
+
+![Deadhead mileage share by service type](images/obj2_deadhead_fragility.png)
+
+**Framework cost recovery versus target, FY2022 to FY2024.** Framework lines missed the cost recovery target in every fiscal year.
+
+![Framework cost recovery versus target](images/obj2_costrecovery_vs_target.png)
 
 ### Objective 3: Capacity and resource alignment
-Is supply matched to demand across jurisdictions and service types? The analysis surfaced a clear outlier, the United Medical Center to Anacostia line, where high crowding met low cost recovery, and a widespread weekend premium where Framework lines cost materially more to run per passenger on weekends than on weekdays.
+
+**Peak vehicles per 1,000 residents, by service type and tier.** Framework tiers draw the most vehicles per capita, and secondary tiers oddly out-supply Tier 1.
+
+![Vehicles per 1,000 residents](images/obj3_vehicles_per_capita.png)
+
+**Crowding versus cost recovery mismatch over time.** United Medical Center to Anacostia is the clear outlier, with a mismatch ratio peaking at 2.33, high demand that fails to translate into financial return.
+
+![Crowding to cost recovery mismatch by line](images/obj3_crowding_mismatch.png)
+
+**Weekend cost premium for Framework lines.** Almost every Framework line costs more per passenger on weekends, and Alexandria to Fairfax shows the widest gap.
+
+![Weekday versus weekend cost per passenger](images/obj3_weekend_surcharge.png)
+
+**Ridership versus vehicle allocation gap, by jurisdiction.** DC carries more ridership than its vehicle share, while Virginia holds the largest positive allocation gap.
+
+![Allocation gap by jurisdiction](images/obj3_allocation_gap.png)
+
+**Crowding versus operating cost, by jurisdiction and service type.** The scatter separates the groups that reach high crowding at low cost from the inefficient ones.
+
+![Crowding versus operating cost](images/obj3_crowding_vs_cost.png)
 
 ### Objective 4: Performance trends over time
-Are reliability, productivity, and crowding improving? The objective tracks OTP by fiscal year and day type, PPRM across classifications, and system wide crowding, to separate genuine improvement from year to year noise.
 
-Full numbers, charts, and recommendations are in `docs/research_report.docx`.
+**On time performance by fiscal year and day type.** Weekday OTP dipped slightly across the period, with weekend service tracking close behind.
+
+![OTP by fiscal year and day type](images/obj4_otp_trend.png)
+
+**Passengers per revenue mile, by classification.** Productivity improved for the stronger classifications across the three years.
+
+![PPRM trend by classification](images/obj4_pprm_trend.png)
+
+**System wide crowding trend.** Average crowding climbed from 0.01 to 0.02 over the period.
+
+![System wide crowding trend](images/obj4_crowding_trend.png)
+
+Full numbers and recommendations are in `docs/research_report.docx`.
 
 ## Team
 
